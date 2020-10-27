@@ -22,6 +22,7 @@ int main(){
    else if (pid == 0)
    {
       printf("Child Process \n");
+      // printf("%d \n", a);
       while (a>-90)
       {
          printf("%d \n",a);
@@ -29,13 +30,14 @@ int main(){
          
       }
       printf("%d \n", a);
-      exit(0);
+      // exit(0);
       
    }
    else
    {
-      wait(NULL);
+      // wait(NULL);
       printf("Parent Process \n");
+      // printf("%d \n", a);
       while (a<100)
       {
          printf("%d \n",a);

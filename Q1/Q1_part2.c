@@ -7,7 +7,8 @@
 int a =10;
 
 void* child(void* arg){
-   printf("Child Process \n");
+   printf("Child Process\n");
+   // printf("%d \n", a);
    while (a>-90)
    {
       printf("%d \n",a);
@@ -20,8 +21,9 @@ void* child(void* arg){
 int main(){
    pthread_t ptid;
    pthread_create(&ptid, NULL, &child, NULL);
-   pthread_join(ptid, NULL);
+   // pthread_join(ptid, NULL);
    printf("Parent Process \n");
+   // printf("%d \n", a);
    while (a<100)
    {
       printf("%d \n",a);
