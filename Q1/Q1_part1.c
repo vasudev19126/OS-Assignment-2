@@ -35,7 +35,6 @@ int main(){
    }
    else
    {
-      wait(NULL);
       printf("Parent Process \n");
       // printf("%d \n", a);
       while (a<100)
@@ -45,6 +44,7 @@ int main(){
          
       }
       printf("%d \n", a);
+      wait(NULL);
    }
    
    return 0;

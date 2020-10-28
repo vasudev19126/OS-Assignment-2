@@ -21,7 +21,6 @@ void* child(void* arg){
 int main(){
    pthread_t ptid;
    pthread_create(&ptid, NULL, &child, NULL);
-   pthread_join(ptid, NULL);
    printf("Parent Process \n");
    // printf("%d \n", a);
    while (a<100)
@@ -31,4 +30,5 @@ int main(){
       
    }
    printf("%d \n", a);
+   pthread_join(ptid, NULL);
 }
