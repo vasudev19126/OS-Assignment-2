@@ -30,12 +30,12 @@ int main(){
          
       }
       printf("%d \n", a);
-      // exit(0);
+      exit(0);
       
    }
    else
    {
-      // wait(NULL);
+      wait(NULL);
       printf("Parent Process \n");
       // printf("%d \n", a);
       while (a<100)
